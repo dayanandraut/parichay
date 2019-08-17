@@ -1,0 +1,15 @@
+#profile-pic{
+    border-radius: 50%;
+    height: 15em;
+    width: 15em;    
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introductory-content{
+    text-align: center;
+}
