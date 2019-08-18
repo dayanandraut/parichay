@@ -2,10 +2,16 @@
 <div class="jumbotron">
   <img src="assets/images/profile.jpeg" class=" img img-responsive center" alt="profile pic" id="profile-pic"> 
   <div class="container introductory-content">
-    <header>
-      <h1>{{mainHeading}}</h1>
-      <h3>{{subHeading}}</h3>
+    <header>      
+      <h1>
+        <span style="border:1px solid black;">
+          <span class="letter-highlight" style="background-color: black">&nbsp;{{firstName}}&nbsp;</span>
+          <span>{{lastName}}&nbsp;</span>
+        </span>
+      </h1>
+      <h3>{{designantion}}</h3>
     </header>
+    <p id="intro">{{intro}}</p>
   </div>
 </div>
 </section>
