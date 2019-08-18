@@ -1,16 +1,16 @@
-<section id="technology" class="container  text-center">
+<section *ngIf="technology" id="technology" class="container  text-center">
   <header>
     <h2>Skills</h2>
   </header>
 
-  <section *ngIf="languages" id="language">    
+  <section *ngFor="let skill of technology" id="{{skill.category}}">    
     <header>
-      <h3>Languages</h3>      
+      <h3>{{skill.category}}</h3>      
     </header>
     <div  class="row">
-      <div *ngFor="let l of languages" class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+      <div *ngFor="let l of skill.data" class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
         <a href="{{l.link}}" target="_blank">
-        <figure>
+        <figure  class="skill">
           <img src="assets/images/technology/{{l.logo}}" class="center-logo img img-responsive tech-logo" alt="{{l.title}}"> 
           <figcaption>{{l.title}}</figcaption>
         </figure>
@@ -18,6 +18,6 @@
       </div>
     </div>   
   </section>
-
+  <br/>
 </section>
 

@@ -13,3 +13,13 @@
 .introductory-content{
     text-align: center;
 }
+
+#intro{
+    background-color: #2b2921e3;
+    color: white;
+}
+
+.letter-highlight{
+    background-color:#403e37;
+    color:white;
+}

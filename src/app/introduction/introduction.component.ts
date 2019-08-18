@@ -11,6 +11,8 @@ export class IntroductionComponent implements OnInit {
 
   ngOnInit() {
   }
-  mainHeading = "Dayanand Raut";
-  subHeading = "< Full Stack Developer />";
+  firstName = "Dayanand";
+  lastName = "Raut";
+  designantion = "< Full Stack Developer />";
+  intro = "   Young CS graduate having passion of delivering the quality code in agile manner   "
 }
