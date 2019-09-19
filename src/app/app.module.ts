@@ -8,6 +8,8 @@ import { TechnologyComponent } from './technology/technology.component';
 import { MyProjectComponent } from './my-project/my-project.component';
 import { SkillsComponent } from './skills/skills.component';
 import { MySkillComponent } from './my-skill/my-skill.component';
+import { KnowMeMoreComponent } from './know-me-more/know-me-more.component';
+import { MyFooterComponent } from './my-footer/my-footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MySkillComponent } from './my-skill/my-skill.component';
     TechnologyComponent,
     MyProjectComponent,
     SkillsComponent,
-    MySkillComponent
+    MySkillComponent,
+    KnowMeMoreComponent,
+    MyFooterComponent
   ],
   imports: [
     BrowserModule,
