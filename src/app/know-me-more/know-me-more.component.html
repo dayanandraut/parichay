@@ -1,0 +1,17 @@
+<section id="knowMeMore" *ngIf="faq" class="container">
+  
+  <header><h3>&lt; Know Me More /&gt;</h3></header>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default" *ngFor="let q of faq; index as i">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#faq{{i}}">
+              Q. {{q.question}}</a>
+            </h4>
+          </div>
+          <div id="faq{{i}}" class="panel-collapse collapse">
+            <div class="panel-body">{{q.answer}}</div>
+          </div>
+        </div>
+    </div>
+</section>
