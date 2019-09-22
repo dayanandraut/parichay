@@ -1,16 +1,15 @@
 <section class="jumbotron project-background">
   <div class="container" *ngIf="myprojects" style="text-align: center">
-    <header><h2>Projects</h2></header>
+    <header><h2 id="title">Projects</h2></header>
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mypanel" *ngFor = "let p of myprojects" >
-          <div class="project" data-toggle="modal" data-target="#myModal">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mypanel" *ngFor = "let p of myprojects; index as i" >
+          <div class="project" data-toggle="modal" [attr.data-target] = "generateId(i, '#')">
             <h3>{{p.title}}</h3>
             <p class="domain">{{p.domain}}</p>
             <p>
               <span *ngFor="let t of p.tech" >
               <span class="tech">{{t}}</span> &nbsp;
-            </span>
-              <!-- <span class="tech">CSS</span> -->
+            </span>             
             </p>
           </div>
       </div>
@@ -21,23 +20,32 @@
 
 
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<div id="modals" *ngFor = "let p of myprojects; index as i">
+<div [id]="generateId(i, '')" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">{{p.title}}</h4>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+        <p>{{p.description}}</p>
+        <ul *ngIf="p.responsibilities">
+          <li *ngFor="let r of p.responsibilities">{{r}}</li>          
+        </ul>  
+        <p style="text-align: center" *ngIf="p.tech">
+          <span *ngFor="let t of p.tech">
+            <span class="tech tech-lg"> {{t}}</span>&nbsp;           
+          </span>          
+        </p>       
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn close-btn" data-dismiss="modal">Close</button>
       </div>
     </div>
 
   </div>
+</div>
 </div>
 </section>
