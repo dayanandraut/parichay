@@ -56,7 +56,7 @@ figure{
 
 .skill-card:hover{
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
-    text-decoration: none;
+    
 }
 
 .skill-card-image{
@@ -67,4 +67,5 @@ figure{
 
 .skill-card-text{
     font-size: large;
+   
 }

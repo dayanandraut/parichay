@@ -18,7 +18,7 @@
   </div> -->
 <div class="container"> 
     <span class="skill-card" *ngFor="let s of skills">
-      <a href="{{s.link}}" title="{{s.category|titlecase}}" target="_blank"> 
+      <a style="text-decoration: none;" href="{{s.link}}" title="{{s.category|titlecase}}" target="_blank"> 
         <img src="assets/images/skill/{{s.logo}}" class="img img-responsive skill-card-image"/>
         &nbsp;&nbsp;<span class="skill-card-text">{{s.title}}</span>
       </a>
