@@ -1,4 +1,23 @@
 header{
     text-align: center;
+    color:#8950a0;
 }
 
+#title{
+    color: #fe9800;
+}
+
+.faq-heading{
+    background: #8950a0;
+    color: white;
+}
+
+.faq-heading:hover{
+    background: #401d4e;    
+}
+
+.faq-answer{
+    border: 1px solid #8950a0;
+    color: #401d4e;
+    font-size: medium;
+}
