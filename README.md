@@ -1,5 +1,6 @@
 # Parichay
 
+A single page application to intoduce myself and my work to the world.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
 ## Development server
@@ -14,14 +15,17 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Hosting on GitHub
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng build --prod --base-href “https://dayanandraut.github.io/parichay/”
+ngh --dir=dist/parichay --no-silent
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Issues
 
-## Further help
+- Profile pic loads slow (May be because of big pic size)
+- Font Awesome not visible in the mobile phone
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Help
+
+- Help me fix the font awesome issue
