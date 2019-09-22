@@ -1,7 +1,9 @@
-<section id="introduction">
-<div class="jumbotron">
-  <img src="assets/images/profile.jpeg" class=" img img-responsive center" alt="profile pic" id="profile-pic"> 
-  <div class="container introductory-content">
+<section id="introduction" class="jumbotron">
+
+  <span id="profile-border">
+    <img src="assets/images/prof2.jpg" class=" img img-responsive center" alt="profile pic" id="profile-pic"> 
+  </span>
+    <div class="container introductory-content">
     <header>      
       <h1>
         <span style="border:1px solid black;">
@@ -9,9 +11,19 @@
           <span>{{lastName}}&nbsp;</span>
         </span>
       </h1>
-      <h3>{{designantion}}</h3>
+      <h3>
+        &lt;&nbsp;
+        <span id="designation">
+        <span id="designation-head">&nbsp;Software&nbsp;</span>
+        <span id="designation-tail">&nbsp;Engineer&nbsp;</span>
+      </span>
+      /&gt;
+      </h3>
     </header>
-    <p id="intro">{{intro}}</p>
+    <p id="intro">
+        Graduated in BE-CSE from <a href="https://www.sonatech.ac.in/" target="_blank">Sona College of Technology</a> in May 2018, I have been working as a full stack developer at <a href="https://www.infosys.com" target="_blank">Infosys</a> since June 2018. I keep on learning, unlearning and relearninig the tools and technology to come up with the best solution to the problem.
+    </p>
+    <p><a href="#myfooter" class="btn btn-success btn-lg" id="contactBtn"> Contact Me</a></p>
   </div>
-</div>
+  
 </section>

@@ -1,9 +1,15 @@
 #profile-pic{
+    border:2px solid orange;
     border-radius: 50%;
     height: 15em;
-    width: 15em;    
+    width: 15em; 
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.62), 0 6px 20px 0 rgba(65, 61, 49, 0.57);
+
 }
 
+#profile-pic:hover{
+    border:4px solid rgb(255, 136, 0);
+}
 .center{
     display: block;
     margin-left: auto;
@@ -15,11 +21,52 @@
 }
 
 #intro{
-    background-color: #2b2921e3;
-    color: white;
+    /* border: 1px solid #dd1b16; */
+    background-color: #dd1b16;;
+    color:white;
+    border-radius: 10px;
+    /* font-family:serif ; */
+    font-size: large; 
+    padding:10px;
 }
+
+#intro a{
+    decoration:none;
+    color: #f1e209;
+}
+
 
 .letter-highlight{
     background-color:#403e37;
     color:white;
+}
+
+#introduction{
+    background:linear-gradient(to bottom, rgba(228, 173, 96, 0.62), rgba(255, 252, 247, 0.79)), url("./../../assets/images/bg/sunset.jpg");
+    background-size: cover;
+   
+
+}
+
+#designation{
+    border:1px solid #ff9900;
+    /* background: yellow; */
+}
+
+#designation-head{
+    color: #ff9900;
+    background-color: white;
+}
+
+#designation-tail{
+    background: #ff9900;
+    color: white;
+}
+
+#contactBtn{
+    background-color: #18a018;
+}
+
+#contactBtn:hover{
+    background-color: #107c10;
 }
