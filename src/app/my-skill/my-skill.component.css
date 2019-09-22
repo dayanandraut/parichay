@@ -1,3 +1,10 @@
+.jumbotron{
+    background: #ff9900;
+}
+
+#title{
+    color: white;
+}
 .skill-logo{
     height: 3em;
     width: auto;
@@ -31,4 +38,33 @@ figure{
     margin-left:-10px;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+/* styles for skill-card */
+.skill-card{
+    display: inline-block;
+    /* height: 10rem; */
+    margin:10px;
+    padding: 10px;
+    /* border: 1px solid white; */
+    background: white;
+    color: #ff9900;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.skill-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    text-decoration: none;
+}
+
+.skill-card-image{
+    height:4rem;
+    width:auto;
+    display: inline-block;
+}
+
+.skill-card-text{
+    font-size: large;
 }

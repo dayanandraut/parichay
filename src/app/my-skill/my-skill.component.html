@@ -1,7 +1,7 @@
 <section class="jumbotron" *ngIf="technology">
   <div class="container" style="text-align: center" >
-    <header><h2>My Skills</h2></header>
-  <div class="row">
+    <header><h2 id="title">My Skills</h2></header>
+  <!-- <div class="row">
   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" *ngFor="let t of technology">
     <div class="my-skill skill-margin">
     <h3>{{t.category}}</h3>
@@ -15,6 +15,15 @@
       </div>
   </div>
 </div>
-  </div>
+  </div> -->
+<div class="container"> 
+    <span class="skill-card" *ngFor="let s of skills">
+      <a href="{{s.link}}" title="{{s.category|titlecase}}" target="_blank"> 
+        <img src="assets/images/skill/{{s.logo}}" class="img img-responsive skill-card-image"/>
+        &nbsp;&nbsp;<span class="skill-card-text">{{s.title}}</span>
+      </a>
+    </span>     
+  </div>  
+
 </div>
 </section>
