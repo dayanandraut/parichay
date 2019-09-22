@@ -1,15 +1,30 @@
 #myfooter{
-    background-color: #1d2442;
+    background-color: #401d4e;
     color: white;
 }
 .footer-block{
     margin: 10px;
     padding: 10px;
     padding-left: 30px;
+    text-align: center;
    
 }
 
 a{
     text-decoration: none;
     color: inherit;
+}
+
+#credit{
+    color: #7f8394;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#social-media-links a{
+    color: #7f8394;
+}
+
+#social-media-links a:hover{
+    color:white;
 }
