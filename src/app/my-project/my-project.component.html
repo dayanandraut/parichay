@@ -1,6 +1,6 @@
 <section class="jumbotron project-background">
   <div class="container" *ngIf="myprojects" style="text-align: center">
-    <header><h2 id="title">Projects</h2></header>
+    <header><h2 id="title">My Projects</h2></header>
     <div class="row">
       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mypanel" *ngFor = "let p of myprojects; index as i" >
           <div class="project" data-toggle="modal" [attr.data-target] = "generateId(i, '#')">
