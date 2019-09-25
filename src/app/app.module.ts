@@ -19,7 +19,7 @@ import { MyFooterComponent } from './my-footer/my-footer.component';
     MyFooterComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
