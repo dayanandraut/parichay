@@ -9,6 +9,8 @@ import { MySkillComponent } from './my-skill/my-skill.component';
 import { KnowMeMoreComponent } from './know-me-more/know-me-more.component';
 import { MyFooterComponent } from './my-footer/my-footer.component';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +22,7 @@ import { MyFooterComponent } from './my-footer/my-footer.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    AngularFontAwesomeModule,
     AppRoutingModule
   ],
   providers: [],
